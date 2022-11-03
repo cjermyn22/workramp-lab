@@ -1,8 +1,8 @@
 # Steps to recreate the app
-This is a basic react app that creates a launchdarkly client and passes it into scope for the child components. You can query flags using the getFlags() hook. You can see it's usage in Greeting.tsx & Time.tsx.
+This is a basic react app using typescript.  Two Feature Flags are called in this application. You can see it's usage in Greeting.tsx & Time.tsx.
 For this example we will only focus on the isTime feature flag which will display the time for users.
 
-You will need to create a launchdarkly account, create a project and note the Client Side ID key. Then you need to create a Feature Flag called isTime and then add the Client Side ID key into the index.tsx of the react app, in the LDProvider object.
+The clientside key will be provided in WorkRamp and will need to be added in the index.tsx file where it mentions 'ENTER_KEY'.
 
 Included is a user object, in order to access the application you will need to include the userid in the URL.
 For example http://localhost:3000/?userId=1
