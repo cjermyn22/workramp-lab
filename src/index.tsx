@@ -26,7 +26,7 @@ userMap.set('3', {id: '3', roles: ['read']});
   const user = userMap.get(userId);
   const LDProvider = await asyncWithLDProvider({
     //TODO replace with LaunchDarkly client side ID For project
-    clientSideID: '636237476c73040c47a4bf2c',
+    clientSideID: 'ENTER_KEY',
     user: {
       key: user.id,
       custom: {
